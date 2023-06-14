@@ -19,14 +19,12 @@ const Banner = () => {
               Become A Professional Dancer
 
             </h1>
-            <p className="text-[17px] mt-3 text-gray-300">
-              I am text block. Click edit button to change this text. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-              luctus nec ullamcorper.
+            <p className="text-[17px]  text-center mt-3 text-gray-400">
+              Dance is a universal language that transcends barriers and allows individuals to express their deepest emotions without uttering a single word.
             </p>
             <div className="flex flex-col md:flex-row md:gap-5 justify-center items-center mt-5">
 
-              <button className="btn ">LEARN MORE</button>
+              <button className="my-btn flex justify-center items-center  ">LEARN MORE</button>
             </div>
           </div>
         </div>
@@ -40,18 +38,16 @@ const Banner = () => {
           }}
           className="w-full"
         >
-          <div className="text-center w-[95vw] md:w-1/2 mx-auto text-white">
+          <div className="text-center flex-col justify-center w-[95vw] md:w-1/2 mx-auto text-white">
             <h1 className="text-3xl md:text-5xl tracking-[1px] font-semibold md:leading-[60px] mt-20">
               Become A Professional Dancer
             </h1>
-            <p className="text-[17px] mt-3 text-gray-300">
-              I am text block. Click edit button to change this text. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-              luctus nec ullamcorper.
+            <p className="text-[17px]  text-center mt-3 text-gray-400">
+              Dance is a universal language that transcends barriers and allows individuals to express their deepest emotions without uttering a single word.
             </p>
             <div className="flex flex-col md:flex-row md:gap-5 justify-center items-center mt-5">
 
-              <button className="btn ">LEARN MORE</button>
+              <button className="my-btn flex justify-center items-center ">LEARN MORE</button>
             </div>
           </div>
         </div>
