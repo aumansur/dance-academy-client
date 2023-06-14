@@ -146,13 +146,14 @@ const Register = () => {
           />
           <p className="text-sm text-red-400 mt-2">{error}</p>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="w-full flex items-center justify-center">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
+            className='my-btn w-full flex items-center justify-center'
           >
-            Register
+            Sign Up
           </button>
+
         </div>
       </form>
     </div>
