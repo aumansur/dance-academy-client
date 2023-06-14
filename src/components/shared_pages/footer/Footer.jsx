@@ -1,57 +1,64 @@
-import { FaGoogle, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import logo from "../../../assets/logo.webp";
+// import { FaGoogle, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import logo from "../../../assets/logo1.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400">
-      <div className="container flex my-5 flex-col md:flex-row justify-center gap-20 items-center py-8 px-4">
-        <div className="">
-          <img className="w-48 mx-auto" src={logo} alt="" />
+    <footer className="bg-gray-900 text-gray-300">
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          {/* Logo and Company Name */}
           <div>
-            <div className="mt-5 flex gap-5 text-3xl justify-center flex-wrap">
-              <span className="p-2 bg-gray-800 text-blue-600 rounded-full shadow-lg">
-                <FaGoogle />
-              </span>
-              <span className="p-2 bg-gray-800 text-blue-600 rounded-full shadow-lg">
-                <FaTwitter />
-              </span>
-              <span className="p-2 bg-gray-800 text-blue-600 rounded-full shadow-lg">
-                <FaInstagram />
-              </span>
-              <span className="p-2 bg-gray-800 text-blue-600 rounded-full shadow-lg">
-                <FaLinkedin />
-              </span>
+            <div className="flex items-center mb-4">
+              <img src={logo} alt="Logo" className="h-8 mr-2" />
+              <h3 className="text-xl font-bold"> <span className='text-[#E5AF4C] uppercase text-2xl font-semibold'>Academy</span></h3>
             </div>
+            <p className="text-sm">123 Street, City, State</p>
+            <p className="text-sm">Phone: 123-456-7890</p>
+            <p className="text-sm">Email: info@danceacademy.com</p>
           </div>
-        </div>
-        <div className="w-full">
-          <div className="mb-4 flex flex-row justify-start  w-full">
-            <input
-              placeholder="Enter Your Email"
-              className="bg-gray-100 w-full border outline-none p-2 rounded-lg"
-              type="text"
-              name=""
-            />
-            <button className="p-2 font-semibold text-white bg-blue-700 hover:bg-blue-900 rounded-lg -ml-3">
-              Send Us
-            </button>
-          </div>
+          {/* Services */}
           <div>
-            <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} Toy Palace Stores. All rights by
-              Mafuz, reserved.
-            </p>
-            <p className="text-gray-400">123 Main Street, City, State, ZIP</p>
-            <p className="text-gray-400">
-              Phone: 123-456-7890 | Email: info@example.com
-            </p>
+            <h3 className="text-xl font-bold mb-4">Services</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm hover:text-gray-400">Online Training</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">Offline Training</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">Practice</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">caring</a></li>
+            </ul>
+          </div>
+
+          {/* Links */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm hover:text-gray-400">Home</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">Instructor</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">Classes</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">About us</a></li>
+            </ul>
+          </div>
+          {/* Legal Policy */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Legal Policy</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm hover:text-gray-400">Privacy Policy</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">Terms of Service</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">Cookie Policy</a></li>
+              <li><a href="#" className="text-sm hover:text-gray-400">Disclaimer</a></li>
+            </ul>
+          </div>
+          {/* Mail Send */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Subscribe to our Newsletter</h3>
+            <form className="flex">
+              <input type="email" className="bg-gray-700 text-gray-200 py-2 px-3 rounded-l-md focus:outline-none" placeholder="Enter your email" />
+              <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-r-md hover:bg-blue-600 focus:outline-none">Subscribe</button>
+            </form>
           </div>
         </div>
-      </div>
-      <div className="container">
-        <div className="border-[0.3px] border-gray-600 shadow-md mt-4 "></div>
-        <p className="p-5 text-center text-2xl font-semibold">
-          Copyright © 2023 Flaire - Dance School & by Mafuz
+
+        <p className="text-sm text-center">
+          &copy; {new Date().getFullYear()} Dance academy All rights reserved @ mansur.
         </p>
       </div>
     </footer>
