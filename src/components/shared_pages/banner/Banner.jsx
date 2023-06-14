@@ -3,7 +3,7 @@ import "react-awesome-slider/dist/styles.css";
 const Banner = () => {
   return (
     <>
-      <AwesomeSlider className="w-screen h-screen md:h-[93vh]">
+      <AwesomeSlider className="lg:w-screen h-screen md:h-[93vh] ">
         <div
           style={{
             background:
