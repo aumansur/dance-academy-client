@@ -11,8 +11,6 @@ const Navbar = ({ hideLogOut }) => {
   // const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-
-
   const { user, logout } = useAuth();
   const [isAdmin] = useAdmin();
   const [isInstructor] = useIsInstructor();
@@ -72,8 +70,33 @@ const Navbar = ({ hideLogOut }) => {
       className={({ isActive }) => (isActive ? "text-[#E5AF4C]" : "")}
     >Sign Up </NavLink></li>
 
-    <li> {user ? <button className='  flex items-center  shadow-xl hover:bg-red-800  bg-red-600 text-white py-4 rounded-md px-4' onClick={handleLogOut}>Log Out</button> : <Link to='/login' className="block lg:my-0  px-3 py-2 lg:rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700">Login </Link>}</li>
-    <li> {user && <img className='w-10 h-10 rounded-full sm:text-center ' src={user.photoURL} alt="" />}  </li>
+    {hideLogOut ? (
+      ""
+    ) : (
+      <li>
+        {user ? (
+          <div className="flex items-center gap-4">
+            <img
+              className="w-10 h-10 rounded-full"
+              src={user?.photoURL}
+              alt="userImg"
+            />
+            <button
+              onClick={handleLogOut}
+              className="flex items-center  shadow-xl hover:bg-red-800  bg-red-600 text-white py-4 rounded-md px-4"
+            >
+              LogOut
+            </button>
+          </div>
+        ) : (
+          <Link to={"/login"}>
+            <button className="btn">
+              login
+            </button>
+          </Link>
+        )}
+      </li>
+    )}
 
 
     {/* <li> {user && <img className='w-10 h-10 rounded-full sm:text-center ' src={user.photoURL} alt="" />}  </li> */}

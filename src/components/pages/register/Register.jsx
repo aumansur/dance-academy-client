@@ -15,7 +15,7 @@ const Register = () => {
       setError("password and confirm-password is not match");
       return;
     }
-    if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/.test(data?.password)) {
+    if (!/(?=.*[A-Z])(?=.*[!@#$%^&*])/.test(data?.password)) {
       setError(
         "Password have Minimum six char,at least one letter and one number"
       );
