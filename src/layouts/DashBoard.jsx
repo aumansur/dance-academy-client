@@ -3,7 +3,8 @@ import useAdmin from "../hooks/useAdmin";
 import useIsInstructor from "../hooks/useIsInstructor";
 import Navbar from "../components/shared_pages/navbar/Navbar";
 import useAuth from "../hooks/useAuth";
-
+import { MdClass, MdSupervisedUserCircle } from 'react-icons/md';
+import { RiUserFollowFill } from 'react-icons/ri';
 const DashBoard = () => {
   const [isAdmin, isAdminLoading] = useAdmin();
   const { user } = useAuth()
@@ -34,20 +35,20 @@ const DashBoard = () => {
                 <NavLink
                   to={"/dashboard/selectedClasses"}
                   className={({ isActive }) =>
-                    isActive ? "text-[#6268F5]" : ""
+                    isActive ? "pc" : ""
                   }
                 >
-                  <span>My Selected Class</span>
+                  <div className="flex items-center"><MdClass size={25} /> <span>  My Selected Class</span></div>
                 </NavLink>
               </li>
               <li className="border-b pb-2 font-medium">
                 <NavLink
                   to={"/dashboard/enrolledClasses"}
                   className={({ isActive }) =>
-                    isActive ? "text-[#6268F5]" : ""
+                    isActive ? "pc" : ""
                   }
                 >
-                  <span>My Enrolled Class</span>
+                  <div className="flex items-center"><RiUserFollowFill size={25} /> <span>  My Selected Class</span></div>
                 </NavLink>
               </li>
             </ul>
@@ -58,20 +59,20 @@ const DashBoard = () => {
                 <NavLink
                   to={"/dashboard/manageClasses"}
                   className={({ isActive }) =>
-                    isActive ? "text-[#6268F5]" : ""
+                    isActive ? "pc" : ""
                   }
                 >
-                  <span>Manage Class</span>
+                  <div className="flex items-center"><MdClass size={25} /> <span>  Manage Class</span></div>
                 </NavLink>
               </li>
               <li className="border-b pb-2 font-medium">
                 <NavLink
                   to={"/dashboard/manageUsers"}
                   className={({ isActive }) =>
-                    isActive ? "text-[#6268F5]" : ""
+                    isActive ? "pc" : ""
                   }
                 >
-                  <span>Manage Users</span>
+                  <div className="flex items-center"><MdSupervisedUserCircle size={25} /> <span>  Manage Users</span></div>
                 </NavLink>
               </li>
             </ul>
@@ -82,17 +83,17 @@ const DashBoard = () => {
                 <NavLink
                   to={"/dashboard/addClasses"}
                   className={({ isActive }) =>
-                    isActive ? "text-[#6268F5]" : ""
+                    isActive ? "pc" : ""
                   }
                 >
-                  <span>Add a Class</span>
+                  <div className="flex items-center"><MdClass size={25} /> <span>  Add a Class</span></div>
                 </NavLink>
               </li>
               <li className="border-b pb-2 font-medium">
                 <NavLink
                   to={"/dashboard/myClasses"}
                   className={({ isActive }) =>
-                    isActive ? "text-[#6268F5]" : ""
+                    isActive ? "pc" : ""
                   }
                 >
                   <span>My Class</span>
