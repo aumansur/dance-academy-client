@@ -62,7 +62,7 @@ export const router = createBrowserRouter([
         element: <Payment />,
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/dashboard/payment/${params.id}`
+            `https://dance-academy-server-xi.vercel.app/dashboard/payment/${params.id}`
           ),
       },
       {
@@ -86,7 +86,7 @@ export const router = createBrowserRouter([
       //   element: <UpdateAddedClass />,
       //   loader: ({ params }) =>
       //     fetch(
-      //       `http://localhost:5000/dashboard/updateAddedClass/${params.id}`
+      //       `https://dance-academy-server-xi.vercel.app/dashboard/updateAddedClass/${params.id}`
       //     ),
       // },
     ],

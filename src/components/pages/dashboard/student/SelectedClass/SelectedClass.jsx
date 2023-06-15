@@ -24,7 +24,7 @@ const SelectedClass = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `http://localhost:5000/deleteSelectedClass/${id}`,
+          `https://dance-academy-server-xi.vercel.app/deleteSelectedClass/${id}`,
           {
             method: "delete",
           }

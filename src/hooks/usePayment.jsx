@@ -11,7 +11,7 @@ const usePayment = () => {
     queryKey: ["payment"],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/payment/${user?.email}`
+        `https://dance-academy-server-xi.vercel.app/payment/${user?.email}`
       );
       return res.json();
     },

@@ -31,7 +31,7 @@ const AddClass = () => {
       status: "pending",
     };
     console.log(info);
-    fetch("http://localhost:5000/classes", {
+    fetch("https://dance-academy-server-xi.vercel.app/classes", {
       method: "POST",
       headers: {
         "content-type": "application/json",

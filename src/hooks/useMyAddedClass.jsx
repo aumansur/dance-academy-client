@@ -12,7 +12,7 @@ const useMyAddedClass = () => {
     enabled: !loading,
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/myAddedClasses/${user?.email}`
+        `https://dance-academy-server-xi.vercel.app/myAddedClasses/${user?.email}`
       );
       return res.json();
     },

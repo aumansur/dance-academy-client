@@ -11,7 +11,7 @@ const useUsers = () => {
     queryKey: ["users"],
     queryFn: async () => {
       const res = await axiosSecure(
-        "http://localhost:5000/users"
+        "https://dance-academy-server-xi.vercel.app/users"
       );
       return res.data;
     },

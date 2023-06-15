@@ -45,7 +45,7 @@ const AuthProvider = ({ children }) => {
       setUser(userInfo);
       if (userInfo) {
         axios
-          .post("http://localhost:5000/jwt", {
+          .post("https://dance-academy-server-xi.vercel.app/jwt", {
             email: userInfo?.email,
           })
           .then((data) => {

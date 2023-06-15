@@ -34,7 +34,7 @@ const ClassesPage = () => {
       status,
       email: user?.email,
     };
-    fetch("http://localhost:5000/selectClasses", {
+    fetch("https://dance-academy-server-xi.vercel.app/selectClasses", {
       method: "POST",
       headers: {
         "content-type": "application/json",
