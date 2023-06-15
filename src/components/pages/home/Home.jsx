@@ -8,8 +8,9 @@ const Home = () => {
     <div>
       <Banner />
       <Classes />
-      <About />
+
       <Instructor />
+      <About />
     </div>
   );
 };

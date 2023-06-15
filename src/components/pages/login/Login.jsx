@@ -71,10 +71,12 @@ const Login = () => {
 
   return (
     <div className="my-bg flex justify-center items-center h-screen">
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 md:w-1/3"
       >
+        <h2 className="text-3xl text-center font-bold mb-6">Login</h2>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
@@ -117,12 +119,7 @@ const Login = () => {
             <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
               Forgot Password?
             </a>
-            <p className="text-end text-sm text-gray-500">
-              if you are new then{" "}
-              <span className="text-red-400 underline">
-                <Link to={"/register"}>Register</Link>
-              </span>
-            </p>
+
           </div>
         </div>
 
@@ -151,6 +148,12 @@ const Login = () => {
           <p className="text-sm ml-4 font-semibold">Continue with Google</p>
           <div></div>
         </div>
+        <p className="text-end text-sm text-gray-500">
+          if you are new then{" "}
+          <span className="text-red-400 underline">
+            <Link to={"/register"}>Sign up</Link>
+          </span>
+        </p>
       </form>
     </div>
   );
