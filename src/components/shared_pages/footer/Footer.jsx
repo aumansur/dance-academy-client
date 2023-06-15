@@ -51,7 +51,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Subscribe to our Newsletter</h3>
             <form className="flex lg:relative">
-              <input type="email" className="bg-gray-700 text-gray-200 py-[7px] w-[400px] px-3 rounded-l-md focus:outline-none" placeholder="Enter your email" />
+              <input type="email" className="bg-gray-700 text-gray-200 py-[7px] w-[400px] px-3 rounded-l-md focus:outline-none" placeholder=" email" />
               <button type="submit" className="lg:absolute right-0 flex items-center justify-center my-btn text-white py-5 px-4 rounded-r-md  focus:outline-none">Subscribe</button>
             </form>
           </div>

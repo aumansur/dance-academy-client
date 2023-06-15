@@ -25,9 +25,9 @@ const DashBoard = () => {
       <div className="bg-gray-100 pt-[85px] min-h-screen font-popi flex">
         <div className="w-[20%] bg-gray-200 p-5">
           <div className="text-center flex justify-center">
-            <img className="w-16 h-16 rounded-full" src={user?.photoURL} alt="" />
+            <img className="w-16 h-16 border-4 border-orange-400 rounded-full" src={user?.photoURL} alt="" />
           </div>
-          <h1 className="text-2xl font-semibold mb-10">Dashboard</h1>
+          <h1 className="text-3xl pc font-semibold mb-10">Dashboard</h1>
 
           {isInstructor || isAdmin || (
             <ul className="space-y-2">

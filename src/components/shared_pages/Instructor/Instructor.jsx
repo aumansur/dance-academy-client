@@ -24,9 +24,9 @@ const Instructor = () => {
             <InstructorCard key={item._id} items={item} />
           ))}
         </div>
-        <div className="text-center mt-12">
+        <div className="text-center flex justify-center mt-12">
           <Link to={"/instructors"}>
-            <button className="btn btn-primary">Show All</button>
+            <button className="my-btn flex justify-center items-center">Show All</button>
           </Link>
         </div>
       </div>

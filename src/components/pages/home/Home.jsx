@@ -5,7 +5,7 @@ import Classes from "../../shared_pages/classes/Classes";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Banner />
       <Classes />
 

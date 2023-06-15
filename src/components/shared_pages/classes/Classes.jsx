@@ -13,7 +13,7 @@ const Classes = () => {
   }
 
   return (
-    <div className="bg-[#292F3C] text-white py-20 container">
+    <div className="bg-white dark:bg-slate-800 text-white py-20 container">
       <h1 className="text-6xl italic text-center">Popular Classes</h1>
       <p className="text-[#91463E] text-center font-medium mt-2 text-xl">
         Choose your style
@@ -23,9 +23,9 @@ const Classes = () => {
           <ClassesCard key={item._id} item={item} />
         ))}
       </div>
-      <div className="text-center mt-12">
+      <div className="text-center flex justify-center mt-12">
         <Link to={"/classes"}>
-          <button className="btn btn-primary">Show All</button>
+          <button className="my-btn flex justify-center items-center ">Show All</button>
         </Link>
       </div>
     </div>
