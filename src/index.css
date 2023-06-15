@@ -22,3 +22,6 @@
 .pc{
   color: #E5AF4C;;
 }
+.my-bg{
+  @apply bg-gradient-to-b from-black to-gray-800
+}

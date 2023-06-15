@@ -58,16 +58,20 @@ const ClassesPage = () => {
   return (
     <div>
       <div
-        className="w-screen h-52 relative text-white"
+        className="my-bg w-screen h-96 relative text-white"
         style={{
           background:
-            "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('https://i.ibb.co/pzkygxH/img-4523-1660715415.jpg')",
+            "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('https://i.ibb.co/Wym5DMQ/classes.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "center center",
+          backgroundPosition: " center",
+          objectFit: 'cover',
+          width: "100%",
+
+
         }}
       >
-        <h1 className="absolute bottom-10 left-10 text-3xl font-semibold">
+        <h1 className="absolute text-center bottom-10 left-96 text-3xl font-semibold">
           All Dance Classes
         </h1>
       </div>
