@@ -3,7 +3,7 @@ import logo from "../../../assets/logo1.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 container text-gray-300">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Logo and Company Name */}
