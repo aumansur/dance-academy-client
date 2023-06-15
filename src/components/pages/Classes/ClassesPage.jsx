@@ -56,9 +56,9 @@ const ClassesPage = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <div
-        className="my-bg w-screen h-96 relative text-white"
+        className=" w-screen h-96 relative text-white"
         style={{
           background:
             "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('https://i.ibb.co/Wym5DMQ/classes.jpg')",
@@ -75,7 +75,7 @@ const ClassesPage = () => {
           All Dance Classes
         </h1>
       </div>
-      <div className="container grid grid-cols-3 gap-5 my-20">
+      <div className="container grid grid-cols-3 gap-10 my-20">
         {classData?.map((item) => (
           <ClassPageCard
             handleSelect={handleSelect}

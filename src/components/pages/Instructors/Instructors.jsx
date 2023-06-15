@@ -12,7 +12,7 @@ const Instructors = () => {
     );
   }
   return (
-    <div>
+    <div className="">
       <div
         className="w-screen h-52 relative text-white"
         style={{
@@ -27,7 +27,7 @@ const Instructors = () => {
           All Instruction Collection
         </h1>
       </div>
-      <div className="container grid grid-cols-3 gap-5 my-20">
+      <div className="container grid grid-cols-3 gap-10 my-20">
         {instructorData?.map((item) => (
           <InstructorsCard items={item} key={item._id} />
         ))}
