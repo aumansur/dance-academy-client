@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Logo and Company Name */}
-          <div>
+          <div className="">
             <div className="flex items-center mb-4">
               <img src={logo} alt="Logo" className="h-8 mr-2" />
               <h3 className="text-xl font-bold"> <span className='text-[#E5AF4C] uppercase text-2xl font-semibold'>Academy</span></h3>
@@ -17,7 +17,7 @@ const Footer = () => {
             <p className="text-sm">Email: info@danceacademy.com</p>
           </div>
           {/* Services */}
-          <div>
+          <div className="pl-16">
             <h3 className="text-xl font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-sm hover:text-gray-400">Online Training</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
             </ul>
           </div>
           {/* Legal Policy */}
-          <div>
+          <div className="">
             <h3 className="text-xl font-bold mb-4">Legal Policy</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-sm hover:text-gray-400">Privacy Policy</a></li>
@@ -50,9 +50,9 @@ const Footer = () => {
           {/* Mail Send */}
           <div>
             <h3 className="text-xl font-bold mb-4">Subscribe to our Newsletter</h3>
-            <form className="flex">
-              <input type="email" className="bg-gray-700 text-gray-200 py-2 px-3 rounded-l-md focus:outline-none" placeholder="Enter your email" />
-              <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-r-md hover:bg-blue-600 focus:outline-none">Subscribe</button>
+            <form className="flex lg:relative">
+              <input type="email" className="bg-gray-700 text-gray-200 py-[7px] w-[400px] px-3 rounded-l-md focus:outline-none" placeholder="Enter your email" />
+              <button type="submit" className="lg:absolute right-0 flex items-center justify-center my-btn text-white py-5 px-4 rounded-r-md  focus:outline-none">Subscribe</button>
             </form>
           </div>
         </div>
