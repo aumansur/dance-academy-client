@@ -12,7 +12,7 @@ const ManageUsers = () => {
     );
   }
   const handleMakeAdmin = (id) => {
-    fetch(`https://dance-academy-server-xi.vercel.app/admin/${id}`, {
+    fetch(`https://dance-academy-server-xi.vercel.app/users/admin/${id}`, {
       method: "PATCH",
     })
       .then((res) => res.json())

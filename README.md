@@ -1,0 +1,1 @@
+*first of all install the project with react router and tailwind css 
