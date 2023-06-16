@@ -1,5 +1,6 @@
 
-## DANCE ACADEMY 
+## DANCE ACADEMY
+* This is a Dance academy website 
 * first of all install the project with react router and tailwind css 
 * main page on the website Home page instructors page , classes page , dashboard, login , sign up page etc. 
 * second then home page layout setup for the project
