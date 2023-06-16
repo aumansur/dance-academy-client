@@ -34,7 +34,7 @@ const ClassesPage = () => {
       status,
       email: user?.email,
     };
-    fetch("https://dance-academy-server-xi.vercel.app/selectClasses", {
+    fetch("https://dance-academy-server-aumansur.vercel.app/selectClasses", {
       method: "POST",
       headers: {
         "content-type": "application/json",

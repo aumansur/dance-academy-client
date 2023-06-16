@@ -11,7 +11,7 @@ const ManageClass = () => {
     );
   }
   const handleApproveStatus = (id) => {
-    fetch(`https://dance-academy-server-xi.vercel.app/classes/${id}`, {
+    fetch(`https://dance-academy-server-aumansur.vercel.app/classes/${id}`, {
       method: "PATCH",
     })
       .then((res) => res.json())

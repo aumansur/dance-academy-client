@@ -9,7 +9,7 @@ const useClasses = () => {
     queryKey: ["classes"],
     queryFn: async () => {
       const res = await fetch(
-        "https://dance-academy-server-xi.vercel.app/classes"
+        "https://dance-academy-server-aumansur.vercel.app/classes"
       );
       return res.json();
     },

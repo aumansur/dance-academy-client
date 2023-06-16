@@ -11,7 +11,7 @@ const useSelectedClass = () => {
     queryKey: ["userSeclectedClass"],
     queryFn: async () => {
       const res = await fetch(
-        `https://dance-academy-server-xi.vercel.app/userSeclectedClass/${user?.email}`
+        `https://dance-academy-server-aumansur.vercel.app/userSeclectedClass/${user?.email}`
       );
       return res.json();
     },

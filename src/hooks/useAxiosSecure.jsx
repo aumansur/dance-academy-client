@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import useAuth from "./useAuth";
 const axiosSecure = axios.create({
-  baseURL: "https://dance-academy-server-xi.vercel.app",
+  baseURL: "https://dance-academy-server-aumansur.vercel.app",
 });
 
 const useAxiosSecure = () => {

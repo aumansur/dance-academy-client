@@ -45,7 +45,7 @@ const AuthProvider = ({ children }) => {
       setUser(userInfo);
       if (userInfo) {
         axios
-          .post("https://dance-academy-server-xi.vercel.app/jwt", {
+          .post("https://dance-academy-server-aumansur.vercel.app/jwt", {
             email: userInfo?.email,
           })
           .then((data) => {

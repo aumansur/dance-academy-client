@@ -12,7 +12,7 @@ const ManageUsers = () => {
     );
   }
   const handleMakeAdmin = (id) => {
-    fetch(`https://dance-academy-server-xi.vercel.app/users/admin/${id}`, {
+    fetch(`https://dance-academy-server-aumansur.vercel.app/users/admin/${id}`, {
       method: "PATCH",
     })
       .then((res) => res.json())
@@ -31,7 +31,7 @@ const ManageUsers = () => {
   };
   const handleMakeInstructor = (id) => {
     console.log(id);
-    fetch(`https://dance-academy-server-xi.vercel.app/users/instructor/${id}`, {
+    fetch(`https://dance-academy-server-aumansur.vercel.app/users/instructor/${id}`, {
       method: "PATCH",
     })
       .then((res) => res.json())

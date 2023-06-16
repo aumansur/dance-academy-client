@@ -34,7 +34,7 @@ const UpdateAddedClass = () => {
     };
     console.log(info);
     fetch(
-      `https://dance-academy-server-xi.vercel.app/dashboard/updateAddedClass/${_id}`,
+      `https://dance-academy-server-aumansur.vercel.app/dashboard/updateAddedClass/${_id}`,
       {
         method: "PATCH",
         headers: {

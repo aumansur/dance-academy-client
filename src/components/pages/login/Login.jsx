@@ -23,7 +23,7 @@ const Login = () => {
           email: result?.user?.email,
           role: "student",
         };
-        fetch("https://dance-academy-server-xi.vercel.app/users", {
+        fetch("https://dance-academy-server-aumansur.vercel.app/users", {
           method: "post",
           headers: {
             "content-type": "application/json",

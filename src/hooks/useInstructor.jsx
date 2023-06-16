@@ -8,7 +8,7 @@ const useInstructor = () => {
   } = useQuery({
     queryKey: ["instructor"],
     queryFn: async () => {
-      const res = await fetch("https://dance-academy-server-xi.vercel.app/instructors");
+      const res = await fetch("https://dance-academy-server-aumansur.vercel.app/instructors");
       return res.json();
     },
   });
